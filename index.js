@@ -159,9 +159,9 @@ async function connectWA() {
     //  const inviteCode = 'BeWovnWKQ5u09BTqsoJ7jk';
     //  dragon.groupAcceptInvite(inviteCode);
 
-      const metadata = await dragon.newsletterMetadata("jid", "120363364919754231@newsletter")	      
+      const metadata = await dragon.newsletterMetadata("jid", "120363401755639074@newsletter")	      
       if (metadata.viewer_metadata === null){
-      await dragon.newsletterFollow("120363364919754231@newsletter")
+      await dragon.newsletterFollow("120363401755639074@newsletter")
       console.log(" CHANNEL FOLLOWRD DONE ")
       }	
 
@@ -216,12 +216,12 @@ async function connectWA() {
 
       // Usage example
       const displayBranding = async () => {
-        await displayStyledText('FUCKING MD');
+        await displayStyledText('QUEEN-DINU-MD');
 
         // Modern signature using chalk for subtle styling
         console.log(
           chalk.dim('[ ') +
-          chalk.bold('POWERED BY DARK CRIMINAL OFFICIAL') +
+          chalk.bold('POWERED BY QUEEN-DINU-MD IN LOD TEM') +
           chalk.dim(' ]')
         );
       };
@@ -352,7 +352,7 @@ if (config.ALLWAYS_OFFLINE === "true") {
           },
           message: {
             groupInviteMessage: {
-              groupJid: "6288213840883-1616169743@g.us",
+              groupJid: "120363398829465928@g.us",
               inviteCode: "m",
               groupName: `Wa-bot`,
               caption: `Sandaru`,
