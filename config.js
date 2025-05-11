@@ -1,0 +1,16 @@
+module.exports = {
+  OWNER_NAME: 'Dark Criminal Team',
+  OWNER_NUMBER: ['94764497078', '94786802371'],
+  PREMIUM: ['94764497078', '94786802371'],
+  BOT_NAME: '',
+  ALLWAYS_OFFLINE: false,
+  API_KEY: 'GENUX-SANDARUX',
+  SESSION_ID: 'GENUX-6811c1651ba34502edfc2944',
+  PREFIX: '.',
+  ANTI_LINK: true,
+  ANTI_DELETE: false,
+  AUTO_READ_MESSAGE: false,
+  AUTO_READ_STATUS: true,
+  AUTO_TYPING: false,
+  WELCOME: false
+};
