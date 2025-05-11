@@ -1,0 +1,37 @@
+{
+  "name": "FUCKING-MD",
+  "version": "1.0.0",
+  "description": "Simple feature add whatsapp bot using @darkcriminal/baileys",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name fucking.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Dark Criminal Team",
+  "license": "ISC",
+  "dependencies": {
+    "@dark-yasiya/scrap": "^1.0.0",
+    "@genuxofficial/baileys": "^1.0.0",
+      "@genuxofficial/nova": "^7.0.0",
+    "@hapi/boom": "^10.0.1",
+    "async-g-i-s": "^1.5.5",
+    "axios": "^1.7.7",
+    "cfonts": "^3.3.0",
+    "pm2": "latest",
+    "chalk": "^4.0.0",
+    "child_process": "^1.0.2",
+    "file-type": "^16.5.3",
+    "fs": "^0.0.1-security",
+    "google-tts-api": "^2.0.2",
+    "moment-timezone": "^0.5.46",
+    "nodemon": "^3.1.7",
+    "path": "^0.12.7",
+    "pino": "^9.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "ruhend-scraper": "^8.0.8",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-search": "^2.12.1",
+    "express": "latest",
+    "performance-now": "latest"
+  }
+}
