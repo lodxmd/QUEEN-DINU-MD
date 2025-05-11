@@ -121,7 +121,7 @@ const x = {
 					"itemCount": 9999,
 					"status": "INQUIRY",
 					"surface": "CATALOG",
-					"message": `@ King Switch`,
+					"message": `@ QUEEN-DINU-MD`,
 					"orderTitle": " TamaRyuichi",
 					"sellerJid": "6285727819741@s.whatsapp.net",
 					"token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
@@ -142,7 +142,7 @@ const x = {
       status: 1,
       surface : 1,
       message: `Sandarux`, //
-      orderTitle: `Switch-Blade`,
+      orderTitle: `QUEEN-DINU-MD`,
       //thumbnail: log0, //Pic
       sellerJid: '0@s.whatsapp.net'
       
@@ -179,7 +179,7 @@ itemCount : 1,
 status: 1,
 surface : 1,
 message: body, //
-orderTitle: `Switch-blade`,
+orderTitle: `QUEEN-DINU-MD`,
 sellerJid: '0@s.whatsapp.net'
 
 }
@@ -198,11 +198,11 @@ sellerJid: '0@s.whatsapp.net'
         participant: "0@s.whatsapp.net",
         ...(m.chat ? { remoteJid: `status@broadcast` } : {}),
       },
-      message: { locationMessage: { name: `Switch-Blade MD`, jpegThumbnail: "" } },
+      message: { locationMessage: { name: `QUEEN-DINU-MD`, jpegThumbnail: "" } },
     };
     const qtext = {
       key: { remoteJid: "status@broadcast", participant: "0@s.whatsapp.net" },
-      message: { extendedTextMessage: { text: `Switch-Blade MD` } },
+      message: { extendedTextMessage: { text: `QUEEN-DINU-MD` } },
     };
 
 const admin = { key : {
@@ -288,7 +288,7 @@ key: {
      // "jpegThumbnail": log0 //The picture
       },
       "title": `Sandarux`, 
-      "description": `Switch-blade`, 
+      "description": `QUEEN-DINU-MD`, 
       "currencyCode": "USD",
       "priceAmount1000": "2000",
       "retailerId": `R`,
@@ -308,7 +308,7 @@ key: {
       message: {
         groupInviteMessage: {
           groupJid: "120363366508703152@g.us",
-          inviteCode: `Switch-Blade MD`,
+          inviteCode: `QUEEN-DINU-MD`,
           groupName: `Join Support`,
           caption: `Wa-bot`,
           jpegThumbnail: "",
@@ -341,7 +341,7 @@ key: {
           requestFrom: '0@s.whatsapp.net',
           noteMessage: {
             extendedTextMessage: {
-              text: `Switch-Blade`
+              text: `QUEEN-DINU-MD`
             }
           },
           expiryTimestamp: 999999999,
@@ -497,7 +497,7 @@ if (config.ANTI_LINK && !isCreator && m.isBotAdmin && !m.isAdmin) {
           id,
           {
             document: fs.readFileSync("./package.json"),
-            fileName: "Switch-Blade",
+            fileName: "QUEEN-DINU-MD",
             fileLength: 99999999999999,
             mimetype: "image/png",
             jpegThumbnail: fs.readFileSync("./lib/bdbhse (2).jpg"),
@@ -588,7 +588,7 @@ if (config.ANTI_LINK && !isCreator && m.isBotAdmin && !m.isAdmin) {
               },
               message: {
                 liveLocationMessage: {
-                  caption: `Switch-Blade MD`,
+                  caption: `QUEEN-DINU-MD`,
                   jpegThumbnail: "",
                 },
               },
@@ -1384,7 +1384,7 @@ case "pornhub":
             isForwarded: true,
             externalAdReply: {
               title: video.title,
-              body: "Powered by Switch-Blade",
+              body: "Powered by QUEEN-DINU-MD",
               thumbnailUrl: video.thumbnail || 'https://files.catbox.moe/ym74xc.jfif',
               mediaType: 1
             }
@@ -1676,7 +1676,7 @@ case 'hidetag':
             await dragon.sendMessage(m.chat, { react: { text: `🧩`, key: m.key } });
         
             // Define the message text
-            const xtexg = `*\`乂 SCRIPT 乂\`*\n\nSwitch Blade MD Full Base For Sale 🥰
+            const xtexg = `*\`乂 SCRIPT 乂\`*\n\nQUEEN-DINU-MD Full Base For Sale ☺️💗
 
 Simple WhatsApp bot 
 
@@ -1698,9 +1698,9 @@ And More
 
 කැමති විදිහට ඔයාගෙ නම් දාලා edit කරගන්න පුළුවන් Full decript 🤩
 
-Price Rs *500* (bank only) 
+Price Rs *600* (EZ cash only) 
 
-Buy Via wa.me/94764497078`;
+Buy Via wa.me/701176587`;
         
             // Send a document with additional details
             await dragon.sendMessage(m.chat, {
@@ -2130,7 +2130,7 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
     document: fs.readFileSync("./package.json"),
     fileLength: 100000000,
     pageCount: 999,
-    fileName: 'Switch-Blade-Menu',
+    fileName: 'QUEEN-DINU-MD-MENU',
     mimetype: 'application/pdf',
     caption: listMenu,
     contextInfo: {
@@ -2411,12 +2411,12 @@ case "9":
                   isForwarded: true,
                   mentionedJid: [m.sender],
                   businessMessageForwardInfo: {
-                      businessOwnerJid: '94764497078'
+                      businessOwnerJid: '94727163302'
                   },
                   forwardedNewsletterMessageInfo: {
                       newsletterJid: '120363364919754231@newsletter',
                       serverMessageId: null,
-                      newsletterName: `King Switch Era`
+                      newsletterName: `QUEEN-DINU-MD`
                   }
               }
           }, { quoted: m });
@@ -2540,7 +2540,7 @@ ${readmore}
               document: fs.readFileSync("./package.json"),
         fileLength: 100000000, 
         pageCount: 999, 
-        fileName: 'Switch-Blade',
+        fileName: 'QUEEN-DINU-MD',
         mimetype: 'application/msword',
         jpegThumbnail: fs.readFileSync("./lib/blade.webp"), 
               caption: caption,
@@ -3058,7 +3058,7 @@ break;
                   let media = await dragon.downloadAndSaveMediaMessage(m.quoted)
 
                   const sticker = new Sticker(media, {
-                    pack: 'Switch-Blade',
+                    pack: 'QUEEN-DINU-MD',
                     author: '💚',
                     type: text.includes('--crop') || text.includes('-c') 
                         ? StickerTypes.CROPPED 
@@ -3100,7 +3100,7 @@ break;
                           },
                           message: {
                             liveLocationMessage: {
-                              caption: `Switch-Blade MD`,
+                              caption: `QUEEN-DINU-MD`,
                               jpegThumbnail: "",
                             },
                           },
@@ -3342,7 +3342,7 @@ break;
           forwardingScore: 10,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
-            newsletterJid: "120363364919754231@newsletter",
+            newsletterJid: "120363401755639074@newsletter",
             serverMessageId: null,
             newsletterName: "Join Support"
           }
@@ -3439,7 +3439,7 @@ break;
       },
       message: {
         liveLocationMessage: {
-          caption: `Switch-Blade MD`,
+          caption: `QUEEN-DINU-MD`,
           jpegThumbnail: "",
         },
       },
@@ -3580,7 +3580,7 @@ case "video2": {
       },
       message: {
         liveLocationMessage: {
-          caption: `Switch-Blade MD`,
+          caption: `QUEEN-DINU-MD`,
           jpegThumbnail: "",
         },
       },
@@ -4401,7 +4401,7 @@ case "tempnumber": {
                     isForwarded: true,
                     externalAdReply: {
                       title: video.title,
-                      body: "Powered by Switch-Blade",
+                      body: "Powered by QUEEN-DINU-MD",
                       thumbnailUrl: video.thumbnail || 'https://files.catbox.moe/ym74xc.jfif',
                       mediaType: 1
                     }
@@ -4549,7 +4549,7 @@ let caption = `「 *Xvideo Downloader*  」\n\n🔍 *Search Results:*\n\n` +
                           isForwarded: true,
                           externalAdReply: {
                             title: videoData.title,
-                            body: "Powerd By Switch-Blade",
+                            body: "Powerd By QUEEN-DINU-MD",
                             thumbnailUrl: videoData.thumbnail || 'https://files.catbox.moe/ym74xc.jfif',
                             mediaType: 1
                           }
