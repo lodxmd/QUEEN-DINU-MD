@@ -149,7 +149,7 @@ const x = {
       }
       }
       }
-const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `13135550002@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': 'Sandaru', sendEphemeral: true}}}
+const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `13135550002@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': 'DINU ID', sendEphemeral: true}}}
 
 
     const fkontak1 = {
@@ -162,7 +162,7 @@ const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJi
       message: {
         contactMessage: {
           displayName: "DINU ID",
-          vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;Sandaru || author},;;;\nFN:Sandaru || author}\nitem1.TEL;waid=${
+          vcard: `BEGIN:VCARD\nVERSION:3.0\nN:XL;Sandaru || author},;;;\nFN:DilINU ID || author}\nitem1.TEL;waid=${
             m.sender.split("@")[0]
           }:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
           sendEphemeral: false,
@@ -526,7 +526,7 @@ if (config.ANTI_LINK && !isCreator && m.isBotAdmin && !m.isAdmin) {
                   showAdAttribution: true,
                   containsAutoReply: true,
                   title: `Wa-bot`,
-                  body: `Sandaru`,
+                  body: `Dinu ID`,
                   previewType: "PHOTO",
                   thumbnailUrl: ``,
                   thumbnail: fs.readFileSync("./lib/wa.jpg"), // Ensure file exists
@@ -1207,7 +1207,7 @@ case 'menu2': {
         await dragon.sendMessage(m.chat, {
             image: { url: 'https://files.catbox.moe/5onr90.jfif' },
             caption: 'Reply he button below',
-            footer: `@Test bot`,
+            footer: `QUEEN-DINU-MD`,
             buttons: [
                 {
                     buttonId: `.owner`,
@@ -2106,13 +2106,13 @@ case 'sendjid': {
         }
         break;
 
-        case "list":
-case "listmenu": {
+        case "menu":
+case "menu": {
   await dragon.sendMessage(m.chat, {
     react: { text: `🚀`, key: m.key }
   });
 
-  const listMenu = `*\`乂 List Menu 乂\`*
+  const Menu = `*\`乂 QUEEN DINU MD MENU 乂\`*
 
 1️⃣ • Main Menu  
 2️⃣ • Download Menu  
@@ -2126,13 +2126,13 @@ case "listmenu": {
 
 _📌 Reply with a number (e.g., 1) to open the menu._`;
 
-  const sentList = await dragon.sendMessage(m.chat, {
+  const sentmenu = await dragon.sendMessage(m.chat, {
     document: fs.readFileSync("./package.json"),
     fileLength: 100000000,
     pageCount: 999,
     fileName: 'QUEEN-DINU-MD-MENU',
     mimetype: 'application/pdf',
-    caption: listMenu,
+    caption: menuMenu,
     contextInfo: {
       mentionedJid: [m.sender],
       forwardingScore: 10,
@@ -2147,7 +2147,7 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
     }
   }, { quoted: m });
 
-  // Listen for replies to the list message
+  // menuen for replies to the menu message
   dragon.ev.on("messages.upsert", async (update) => {
     try {
       const msg = update.messages[0];
@@ -2156,7 +2156,7 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
       const body = msg.message.extendedTextMessage?.text || msg.message.conversation;
       const stanzaId = msg.message?.extendedTextMessage?.contextInfo?.stanzaId;
 
-      if (stanzaId === sentList.key.id) {
+      if (stanzaId === sentmenu.key.id) {
         const number = body.trim();
         let menu = '';
 
@@ -2961,7 +2961,7 @@ Join Bot Test ❔
             "VERSION:3.0\n" +
             "FN:Sandaru \n" +
             "ORG:Owner;\n" +
-            "TEL;type=CELL;type=VOICE;waid=94764497078:+94772797288\n" +
+            "TEL;type=CELL;type=VOICE;waid=94701176587:+94727163302\n" +
             "END:VCARD";
 
           
@@ -4446,7 +4446,7 @@ case "tempnumber": {
           break;
         }
 
-        case 'play1': {
+        case 'play22': {
     if (!text) return reply("❗ Please enter the song name.");
 
     await dragon.sendMessage(m.chat, { react: { text: '🕖', key: m.key } });
