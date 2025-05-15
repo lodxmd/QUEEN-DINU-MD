@@ -2106,13 +2106,13 @@ case 'sendjid': {
         }
         break;
 
-        case "menu":
-case "menu": {
+        case "list":
+case "listmenu": {
   await dragon.sendMessage(m.chat, {
     react: { text: `🚀`, key: m.key }
   });
 
-  const Menu = `*\`乂 QUEEN DINU MD MENU 乂\`*
+  const listMenu = `*\`乂 List Menu 乂\`*
 
 1️⃣ • Main Menu  
 2️⃣ • Download Menu  
@@ -2126,13 +2126,13 @@ case "menu": {
 
 _📌 Reply with a number (e.g., 1) to open the menu._`;
 
-  const sentmenu = await dragon.sendMessage(m.chat, {
+  const sentList = await dragon.sendMessage(m.chat, {
     document: fs.readFileSync("./package.json"),
     fileLength: 100000000,
     pageCount: 999,
     fileName: 'QUEEN-DINU-MD-MENU',
     mimetype: 'application/pdf',
-    caption: menuMenu,
+    caption: listMenu,
     contextInfo: {
       mentionedJid: [m.sender],
       forwardingScore: 10,
@@ -2147,7 +2147,7 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
     }
   }, { quoted: m });
 
-  // menuen for replies to the menu message
+  // Listen for replies to the list message
   dragon.ev.on("messages.upsert", async (update) => {
     try {
       const msg = update.messages[0];
@@ -2156,7 +2156,7 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
       const body = msg.message.extendedTextMessage?.text || msg.message.conversation;
       const stanzaId = msg.message?.extendedTextMessage?.contextInfo?.stanzaId;
 
-      if (stanzaId === sentmenu.key.id) {
+      if (stanzaId === sentList.key.id) {
         const number = body.trim();
         let menu = '';
 
@@ -2183,6 +2183,9 @@ _📌 Reply with a number (e.g., 1) to open the menu._`;
 
 🎵 *.play*  
    _Usage:_ *.play Believer*
+   
+   🎵 *.play1*  
+   _Usage:_ *.Video and song*
 
 📹 *.video*  
   _Usage:_ *.video funny cats*
@@ -2435,6 +2438,7 @@ ${readmore}
 *\`乂 Download Menu 乂\`* \n
 ┏❐ 
 ┃⭔.play
+┃⭔.play1
 ┃⭔.video
 ┃⭔.ytmp3
 ┃⭔.ytmp4
@@ -2961,7 +2965,7 @@ Join Bot Test ❔
             "VERSION:3.0\n" +
             "FN:Sandaru \n" +
             "ORG:Owner;\n" +
-            "TEL;type=CELL;type=VOICE;waid=94701176587:+94727163302\n" +
+            "TEL;type=CELL;type=VOICE;waid=94764497078:+94772797288\n" +
             "END:VCARD";
 
           
@@ -4446,7 +4450,7 @@ case "tempnumber": {
           break;
         }
 
-        case 'play22': {
+        case 'play1': {
     if (!text) return reply("❗ Please enter the song name.");
 
     await dragon.sendMessage(m.chat, { react: { text: '🕖', key: m.key } });
@@ -4759,7 +4763,7 @@ break;
 
       case "addprem": {
     if (!isCreator) return;
-    if (!args[0]) return reply(`𝐄𝐱𝐚𝐦𝐩𝐥𝐞:\n• User: 628xxx\n• Group: 120363xxxxxx@g.us`);
+    if (!args[0]) return reply(`𝐄𝐱𝐚𝐦𝐩𝐥𝐞:\n• User: 947xxx\n• Group: 120363xxxxxx@g.us`);
 
     let target = args[0];
     
