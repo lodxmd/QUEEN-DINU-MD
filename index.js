@@ -355,7 +355,7 @@ if (config.ALLWAYS_OFFLINE === "true") {
               groupJid: "120363398829465928@g.us",
               inviteCode: "m",
               groupName: `Wa-bot`,
-              caption: `Sandaru`,
+              caption: `dinu`,
             },
           },
         };
