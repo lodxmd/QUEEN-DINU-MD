@@ -4445,6 +4445,122 @@ case "tempnumber": {
           }
           break;
         }
+
+        case 'play1': {
+    if (!text) return reply("❗ Please enter the song name.");
+
+    await dragon.sendMessage(m.chat, { react: { text: '🕖', key: m.key } });
+
+    try {
+        let search = await yts(`${text}`);
+        if (!search || search.all.length === 0) return reply("❌ No results found!");
+
+        let { videoId, image, title, views, duration, author, ago, url } = search.all[0];
+        let caption = `「 *YOUTUBE PLAY* 」\n\n` +
+                     `🎵 *Title*: ${title}\n\n` +
+                     `👀 *Views*: ${views}\n\n` +
+                     `⏳ *Duration*: ${duration.timestamp}\n\n` +
+                     `📺 *Channel*: ${author.name}\n\n` +
+                     `📅 *Uploaded*: ${ago}\n\n` +
+                     `🔗 *URL*: ${url}`;
+
+        await dragon.sendMessage(m.chat, {
+            image: { url: image },
+            caption: caption,
+            footer: `@ King Switch`,
+            buttons: [
+                {
+                    buttonId: `.song5 ${title}`,
+                    buttonText: {
+                        displayText: "🎶 Audio"
+                    },
+                    type: 1
+                },
+                {
+                    buttonId: `.yt ${url}`,
+                    buttonText: {
+                        displayText: "🎥 Video"
+                    },
+                    type: 1
+                }
+            ],
+            headerType: 1,
+            viewOnce: true
+        });
+
+    } catch (error) {
+        console.error(error);
+        reply("⚠️ Error: " + error.message);
+    }
+    break;
+}
+
+
+case 'song5': {
+  try {
+      await dragon.sendMessage(from, { react: { text: '🎧', key: m.key }});
+      if(!text) return reply("❗ Please enter the song name.");
+      
+      // Add await and proper template literal
+      const response = await axios.get(`https://apis.davidcyriltech.my.id/song?query=${text}`);
+      
+      const songData = response.data.result;
+      
+     await dragon.sendMessage(from, { 
+    audio: { 
+        url: songData.audio.download_url 
+    }, 
+    fileName: songData.title + '.mp3', 
+    mimetype: 'audio/mpeg', 
+    ptt: false,
+    contextInfo: {
+        forwardingScore: 9999999,
+        isForwarded: true
+    }
+    });
+  
+
+
+      await dragon.sendMessage(from, { react: { text: `✅`, key: m.key }});
+  } catch (e) {
+      console.log(e);
+      reply(`❗ Error: ${e.message}`);
+  }
+}
+break;
+
+case 'yt': {
+    if (!text) return reply("❗ Please provide a YouTube URL.");
+
+    await dragon.sendMessage(m.chat, { react: { text: '📥', key: m.key } });
+
+    try {
+        let ytapi = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(text)}`;
+        let res = await fetch(ytapi);
+        if (!res.ok) throw new Error("Failed to fetch video data.");
+        let json = await res.json();
+
+        if (!json.success || !json.result || !json.result.download_url) {
+            return reply("❌ Failed to retrieve download link.");
+        }
+
+        let { title, quality, download_url } = json.result;
+
+        await dragon.sendMessage(m.chat, {
+            video: { url: download_url },
+            caption: `🎬 *${title}*\n📥 *Quality:* ${quality}`
+        }, { quoted: m });
+
+    } catch (err) {
+        console.error(err);
+        reply("⚠️ Error occurred: " + err.message);
+    }
+
+    break;
+}
+
+
+
              
 
         case "xvideo":
